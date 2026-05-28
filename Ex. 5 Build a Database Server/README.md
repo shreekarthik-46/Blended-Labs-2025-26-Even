@@ -2,10 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
-
+* **Name**: Subashree Karthikeyan
+* **Register Number**: 212224050049
+* **Date of Submission**: 30.05.2026
 ---
 
 ## Objective
@@ -84,11 +83,15 @@ Test the database server by connecting to it locally or remotely and performing 
 
 (Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. First, a security group named DB Security Group was created to allow the web server to connect to the database using port 3306 (MySQL).
+   
+2.A DB Subnet Group was created with subnets from two Availability Zones to allow the database to run in a Multi-AZ environment for high availability.
+
+3.A MySQL RDS instance named lab-db was created with the database name lab, username main, and password lab-password.
+
+4.The database was associated with the DB Security Group and the Lab VPC so that the web server can securely connect to the database.
+
+5.The web application running on the EC2 server was opened using its IP address, and the RDS endpoint, database name, username, and password were entered to interact with the database.
 
 ---
 
@@ -96,19 +99,17 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
-
----
+<img width="1914" height="1098" alt="Screenshot 2026-03-14 221938" src="https://github.com/user-attachments/assets/77b8c61d-572d-41f0-8411-35bec6e5ff11" />
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+<img width="1898" height="1144" alt="Screenshot 2026-03-14 222312" src="https://github.com/user-attachments/assets/00ffd7dd-4f29-45c0-ab81-76ab8bae4ad0" />
 
 ---
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+<img width="1910" height="1139" alt="Screenshot 2026-03-14 222548" src="https://github.com/user-attachments/assets/33b4f45e-6beb-4d84-a6df-1c33bcbcbdd2" />
 
 ---
 
